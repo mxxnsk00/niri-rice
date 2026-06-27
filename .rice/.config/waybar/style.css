@@ -1,0 +1,117 @@
+@import "colors.css";
+
+* {
+    font-family: monospace;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    margin: 8px 4px;
+}
+
+#clock,
+#network,
+#pulseaudio,
+#cpu,
+#memory,
+#tray {
+    background: alpha(@surface_container, 0.85);
+    color: @on_surface;
+    border-radius: 12px;
+    padding: 4px 14px;
+    margin: 0 4px;
+}
+
+#clock {
+    color: @primary;
+}
+
+#network {
+    color: @tertiary;
+}
+
+#pulseaudio {
+    color: @secondary;
+}
+
+#pulseaudio.muted {
+    color: @error;
+}
+
+#cpu, #memory {
+    color: @on_surface_variant;
+}
+
+#tray {
+    padding: 4px 10px;
+}
+
+#mpris {
+    background: alpha(@surface_container, 0.85);
+    color: @primary;
+    border-radius: 12px;
+    padding: 4px 14px;
+    margin: 0 4px;
+}
+
+#mpris.paused {
+    color: @outline;
+}
+
+#custom-prev,
+#custom-play,
+#custom-next {
+    background: alpha(@surface_container, 0.85);
+    color: @secondary;
+    border-radius: 12px;
+    padding: 4px 10px;
+    margin: 0 2px;
+}
+
+#custom-play {
+    color: @primary;
+}
+
+#custom-wlogout {
+  padding: 0 10px;
+  margin: 4px 6px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+#custom-wlogout {
+    background: alpha(@surface_container, 0.85);
+    color: @error;
+    border-radius: 12px;
+    padding: 4px 14px;
+    margin: 0 4px;
+}
+#custom-wlogout:hover {
+    background: alpha(@error, 0.15);
+}
+ #custom-swaync {
+    background: alpha(@surface_container, 0.85);
+    color: @primary;
+    border-radius: 12px;
+    padding: 4px 14px;
+    margin: 0 4px;
+}
+
+#custom-cava {
+    background: alpha(@surface_container, 0.85);
+    color: @primary;
+    border-radius: 12px;
+    padding: 4px 14px;
+    margin: 0 4px;
+    font-size: 8px;
+}
+

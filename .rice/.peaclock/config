@@ -1,0 +1,15 @@
+mode clock
+view digital
+set auto-size on
+set auto-ratio on
+set hour-24 on
+set seconds off
+set date on
+style active-bg #9ccbfb
+style inactive-bg clear
+style colon-bg clear
+style date #d4bee6
+style active-fg clear
+style inactive-fg clear
+style colon-fg clear
+

@@ -1,0 +1,57 @@
+@import "/home/glwp/.config/waybar/colors.css";
+
+* {
+    font-family: monospace;
+    background-color: transparent;
+}
+
+window {
+    background-color: alpha(@surface, 0.9);
+}
+
+button {
+    background-color: alpha(@surface_container, 0.85);
+    color: @on_surface;
+    border: none;
+    border-radius: 12px;
+    margin: 8px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: @primary;
+    color: @on_primary;
+}
+
+button:focus {
+    background-color: @primary;
+    color: @on_primary;
+}
+
+#lock {
+    background-image: url("/usr/share/wlogout/icons/lock.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+}
+
+#logout {
+    background-image: url("/usr/share/wlogout/icons/logout.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+}
+
+#reboot {
+    background-image: url("/usr/share/wlogout/icons/reboot.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+}
+
+#shutdown {
+    background-image: url("/usr/share/wlogout/icons/shutdown.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+}

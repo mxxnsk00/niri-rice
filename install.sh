@@ -40,6 +40,7 @@ cp "$SCRIPT_DIR/.rice/.config/fastfetch/ascii.txt" ~/.config/fastfetch/
 cp "$SCRIPT_DIR/.rice/.config/swaync/config.json" ~/.config/swaync/
 cp -r "$SCRIPT_DIR/.rice/.config/wlogout/" ~/.config/
 cp "$SCRIPT_DIR/.rice/.config/matugen/templates/midnight-discord.css" ~/.config/Equicord/themes/matugen.css
+cp "$SCRIPT_DIR/.rice/.config/starship.toml" ~/.config/
 
 echo "Copying wallpapers..."
 cp "$SCRIPT_DIR/wallpapers/"* ~/Pictures/wallpapers/ 2>/dev/null || true

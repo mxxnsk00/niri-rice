@@ -114,4 +114,10 @@ window#waybar {
     margin: 0 4px;
     font-size: 8px;
 }
-
+#custom-pavucontrol {
+    background: alpha(@surface_container, 0.85);
+    color: @secondary;
+    border-radius: 12px;
+    padding: 4px 14px;
+    margin: 0 4px;
+}

@@ -4,7 +4,7 @@
     "reload_style_on_change": true,
     "modules-left": ["network", "pulseaudio", "cpu", "memory"],
     "modules-center": ["custom/prev", "custom/play", "custom/next", "custom/cava", "mpris", "clock"],
-    "modules-right": ["custom/swaync", "tray", "custom/wlogout"],
+    "modules-right": ["custom/pavucontrol", "custom/swaync", "tray", "custom/wlogout"],
 
     "clock": {"format": "{:%H:%M}", "format-alt": "{:%d.%m.%Y %H:%M}", "tooltip-format": "{calendar}"},
     "network": {"interface": "enp5s0", "format-ethernet": "󰈀 {bandwidthDownBytes}", "format-wifi": "󰤨 {essid}", "format-disconnected": "󰈂 off", "tooltip-format": "{ifname} {ipaddr}"},
@@ -53,6 +53,12 @@
     "exec": "cava -p ~/.config/cava/waybar.ini | sed -u 's/;//g;s/0/▁/g;s/1/▂/g;s/2/▃/g;s/3/▄/g;s/4/▅/g;s/5/▆/g;s/6/▇/g;s/7/█/g'",
     "format": "{}",
     "tooltip": false
+},
+"custom/pavucontrol": {
+    "format": "󰍬",
+    "on-click": "pavucontrol",
+    "tooltip": true,
+    "tooltip-format": "Volume mixer"
 }
 
 

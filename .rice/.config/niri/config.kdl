@@ -1,4 +1,12 @@
-// This config is in the KDL format: https://kdl.dev
+output "DP-3" {
+    mode "1920x1080@179.998"
+}
+
+output "HDMI-A-1" {
+    mode "1920x1080@74.973"
+}
+
+//This config is in the KDL format: https://kdl.dev
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
 // https://niri-wm.github.io/niri/Configuration:-Introduction
@@ -78,6 +86,7 @@ input {
 // https://niri-wm.github.io/niri/Configuration:-Outputs
 // Remember to uncomment the node by removing "/-"!
 /-output "eDP-1" {
+
     // Uncomment this line to disable this output.
     // off
 
@@ -356,7 +365,7 @@ binds {
  
   Mod+Shift+W { spawn "bash" "-c" "/home/glwp/.local/bin/wallpaper.sh >/tmp/wall.log 2>&1" 
   }
-   
+  Mod+E { spawn "nautilus"; }
 
 
 
@@ -660,7 +669,7 @@ window-rule {
   clip-to-geometry true
 }
 window-rule {
-          exclude app-id=r#"^(helium|PPSSPPSDL|mGBA|Azahar|steam|net.kuribo64.melonDS|Ryujinx|qimgv|libreoffice-writer|libreoffice-calc|mpv)$"#
+          exclude app-id=r#"^(discord|helium|PPSSPPSDL|mGBA|Azahar|steam|net.kuribo64.melonDS|Ryujinx|qimgv|libreoffice-writer|libreoffice-calc|mpv)$"#
           opacity 0.86
           draw-border-with-background false
             background-effect {

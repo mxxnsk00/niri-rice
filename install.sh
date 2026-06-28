@@ -31,6 +31,15 @@ cp "$SCRIPT_DIR/.rice/.config/spicetify/Themes/text/user.css" ~/.config/spicetif
 cp "$SCRIPT_DIR/.rice/.local/bin/wallpaper.sh" ~/.local/bin/
 chmod +x ~/.local/bin/wallpaper.sh
 cp "$SCRIPT_DIR/.rice/.peaclock/config" ~/.peaclock/
+mkdir -p ~/.config/fastfetch
+mkdir -p ~/.config/swaync
+mkdir -p ~/.config/wlogout
+mkdir -p ~/.config/Equicord/themes
+cp "$SCRIPT_DIR/.rice/.config/fastfetch/config.jsonc" ~/.config/fastfetch/
+cp "$SCRIPT_DIR/.rice/.config/fastfetch/ascii.txt" ~/.config/fastfetch/
+cp "$SCRIPT_DIR/.rice/.config/swaync/config.json" ~/.config/swaync/
+cp -r "$SCRIPT_DIR/.rice/.config/wlogout/" ~/.config/
+cp "$SCRIPT_DIR/.rice/.config/matugen/templates/midnight-discord.css" ~/.config/Equicord/themes/matugen.css
 
 echo "Copying wallpapers..."
 cp "$SCRIPT_DIR/wallpapers/"* ~/Pictures/wallpapers/ 2>/dev/null || true

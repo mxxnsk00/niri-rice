@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "top",
     "reload_style_on_change": true,
-    "modules-left": ["network", "pulseaudio", "cpu", "memory"],
+    "modules-left": ["niri/workspaces", "network", "pulseaudio", "cpu", "memory"],
     "modules-center": ["custom/prev", "custom/play", "custom/next", "custom/cava", "mpris", "clock"],
     "modules-right": ["custom/pavucontrol", "custom/swaync", "tray", "custom/wlogout"],
 
@@ -59,12 +59,9 @@
     "on-click": "pavucontrol",
     "tooltip": true,
     "tooltip-format": "Volume mixer"
-}
+},
 
-
-
-
-
-
-
+"niri/workspaces": {
+    "format": "{index}"
+  }
 }
